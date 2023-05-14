@@ -66,7 +66,7 @@ app.use(async (req, res, next) => {
   const config = clientConfigs[clientId];
 
   const ip = req.ip;
-  const response = await axios.get(`https://ipinfo.io/${ip}?token=YOUR_IPINFO_TOKEN`);
+  const response = await axios.get(`https://ipinfo.io/${ip}?token=9f69c369c0e1bf`);
 
   const { country, vpn, datacenter } = response.data;
 
